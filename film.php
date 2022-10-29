@@ -13,6 +13,12 @@ class Movie {
     }
 
 
+    public function addGenere($_genere){
+        if( in_array($_genere, $this->Genere) )
+        $this->Genere[] = $_genere;
+    }
+
+
 
 
 
