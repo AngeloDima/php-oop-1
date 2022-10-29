@@ -1,30 +1,31 @@
 <?php
 
-class Movie {
-    public $titolo;
-    public $diretto;
-    public $genere = ``;
-    public $lingua = [];
-    public $attore = ``;
-    public $anno = ``;
+  class ClassFilm {
 
 
+      private $title;
+      private $director;
+      public $genre = '';
 
+      public $actors = [];
+      public $language = '';
 
     
-    function __construct($_titolo){
-        $this->titolo = $_titolo;
-    }
+      function __construct($_title, $_director = ''){
+          $this->titolo = $_title;
+          $this->diretto = $_director;
+      }
 
 
-    public function addGenere($_genere){
-        if( in_array($_genere, $this->Genere) )
-        $this->Genere[] = $_genere;
-    }
+      public function addAttore($_actors){
+          if( !in_array($_actors, $this->actors) ){
+              $this->actors[] = $_actors;
+          }
+       
+      }
+
+  }
 
 
 
-
-
-}
 ?>
