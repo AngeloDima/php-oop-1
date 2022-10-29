@@ -12,6 +12,19 @@
 
 require_once __DIR__ . `/models/film.php`;
 
+
+$film = new Film(`BattleShip`);
+$film->addGenere(`azione`);
+
+$film->diretto(`Angelo Di mauro`);
+$film->lingua(`Italiano`);
+$film->anno(`2014`);
+
+
+
+var_dump($film);
+
+
 ?>
 
 </body>
