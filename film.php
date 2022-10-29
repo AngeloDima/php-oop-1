@@ -7,6 +7,15 @@ class Movie {
     public $lingua = [];
     public $attore = ``;
     public $anno = ``;
+
+    function __construct($_titolo){
+        $this->titolo = $_titolo;
+    }
+
+
+
+
+
 }
 
 
